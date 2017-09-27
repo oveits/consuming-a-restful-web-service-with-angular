@@ -9,6 +9,6 @@ describe('consuming-a-restful-web-service-with-angular App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toContain('Angular 4 Hello World Quickstart!');
   });
 });
