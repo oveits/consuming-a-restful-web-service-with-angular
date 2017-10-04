@@ -28,7 +28,7 @@ describe('Blog', () => {
 
   it('should display the blog title', () => {
     expect(element(by.css('h1')).getText()).toEqual('Angular 4 Hello World Quickstart');
-    expect(blogtitle.getAttribute('value')).toEqual('Angular 4 Hello World Quickstart');
+    expect(blogtitle.getText()).toEqual('Angular 4 Hello World Quickstart');
   });
 
 });
