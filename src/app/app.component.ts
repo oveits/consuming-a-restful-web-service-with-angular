@@ -11,6 +11,7 @@ import 'rxjs/add/operator/map'
 export class AppComponent implements OnInit {
 
   title : any = null
+  content : any = null
 
   constructor(private _http: Http) {}
 
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
                 .map((res: Response) => res.json())
                  .subscribe(data => {
                         this.title = data.title;
+                        this.content = data.content;
                         console.log(data);
                 });
   }
