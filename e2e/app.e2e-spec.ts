@@ -31,5 +31,6 @@ describe('Blog', () => {
 
   it('should display the blog content', () => {
     expect(blog_content.getText()).toContain('In this hello world style tutorial, we will follow a step by step guide to a working Angular 4 application.');
+    expect(blog_content.getInnerHtml()).toMatch(/^<p>In this hello world style tutorial, we will follow a step by step guide to a working Angular 4 application\./);
   });
 });
