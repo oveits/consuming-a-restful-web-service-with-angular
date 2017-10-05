@@ -21,7 +21,10 @@ describe('Blog', () => {
     browser.get('/');
   });
 
+  const blog_title = element(by.id('blog_title'));
+
   it('should display the blog title as header 1 and id="blog_title"', () => {
     expect(element(by.css('h1')).getText()).toEqual('Angular 4 Hello World Quickstart');
+    expect(blog_title.getText()).toEqual('Angular 4 Hello World Quickstart');
   });
 });
